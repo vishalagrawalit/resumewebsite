@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
   <title>Simply Me :)</title>
@@ -23,19 +23,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Vishal</a>
+      <a class="navbar-brand" href="#knowaboutme" >Vishal</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center navbar-right">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-md-6 text-center navbar-right">
             <div class="list-group list-group-horizontal ">
                 <a href="https://github.com/vishuvish" class="list-group-item" target="_blank">
                     <i class="fa fa-github" aria-hidden="true"></i>Github
                 </a>
-                <a href="http://bit.ly/2tGTNjk" class="list-group-item" target="_blank">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>Facebook
+                <a href="https://www.codechef.com/users/vishuvish" class="list-group-item" target="_blank">
+                    <i class="fa fa-code" aria-hidden="true"></i>Codechef
                 </a>
                 <a href="https://stackoverflow.com/users/7628361/vishal-agrawal" class="list-group-item" target="_blank">
-                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>StackOverflow
+                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>Stack
+                </a>
+                <a href="http://www.spoj.com/users/vish_14/" class="list-group-item" target="_blank">
+                    <i class="fa fa-code" aria-hidden="true"></i>SPOJ
                 </a>
             </div>
         </div>
@@ -44,20 +47,65 @@
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-    <h3 class="margin">Who Am I?</h3>
-    <img src="images/dp.jpg" class="img-responsive img-circle margin"
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <p> I'm </p>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-1 text-center" id="knowaboutme">
+    <h3 class="margin">Know More About Me!</h3>
+    <img src="images/pic.jpg" class="img-responsive img-circle margin"
          style="display:inline" alt="Display Picture" width="350" height="350">
-    <h3>I'm Nobody</h3>
+    <div class="collapse navbar-collapse">
+        <div class="list-group list-group-horizontal navbar-center education">
+            <a href="#aboutModal" class="navbar-brand" data-toggle="modal" data-target="#schooling">Educational Qualifications</a>
+        </div>
+    </div>
     <div class="collapse navbar-collapse">
         <div class="list-group list-group-horizontal navbar-center">
             <a href="#aboutModal" class="navbar-brand" data-toggle="modal" data-target="#skills">Skills</a>
+            <a href="#aboutModal" class="navbar-brand" data-toggle="modal" data-target="#hobbies">Extra-Curricular Activities</a>
             <a href="#aboutModal" class="navbar-brand" data-toggle="modal" data-target="#achievements">Achievements</a>
-            <a href="#aboutModal" class="navbar-brand" data-toggle="modal" data-target="#hobbies">Hobbies</a>
         </div>
     </div>
 </div>
 
+
+<!-- Education Modal -->
+    <div class="modal fade" id="schooling" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel0">Eduactional Qualifications</h4>
+                    </div>
+                <div class="modal-body">
+                    <strong>Schooling: </strong>
+                    <center>
+                        <span class="label label-danger">10th - CBSE Board - 2012 - 9.4 cgpa</span>
+                        <span class="label label-danger">12th - CBSE Board - 2014 - 86.4%</span>
+                    </center>
+                    <strong>College: </strong>
+                    <center>
+                        <span class="label label-success">Bundelkhand Institute of Engineering & Technology, Jhansi - 74%</span>
+                        <span class="label label-success">Branch - Information Technology</span>
+                    </center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        <ul>
+                        <li>74% till 4th semester (2nd year).</li>
+                        </ul>
+                    </p>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Vishal</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- skills Modal -->
     <div class="modal fade" id="skills" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -67,18 +115,47 @@
                     <h4 class="modal-title" id="myModalLabel1">Skills</h4>
                     </div>
                 <div class="modal-body">
+                    <strong>Computer Programming: </strong>
                     <center>
-                        <span class="label label-warning">HTML5/CSS</span>
-                        <span class="label label-info">Adobe CS 5.5</span>
-                        <span class="label label-info">Microsoft Office</span>
-                        <span class="label label-success">Windows XP, Vista, 7</span>
+                        <span class="label label-danger">Database Management System</span>
+                        <span class="label label-danger">Data Structures Using C & Python</span>
+                        <span class="label label-danger">Object Oriented Concepts </span>
+                    </center>
+                    <strong>Programming Languages: </strong>
+                    <center>
+                        <span class="label label-success">C</span>
+                        <span class="label label-success">C++</span>
+                        <span class="label label-success">Python</span>
+                    </center>
+                    <strong>Scripting & Markup Languages: </strong>
+                    <center>
+                        <span class="label label-info">HTML5/CSS</span>
+                        <span class="label label-info">Bootstrap</span>
+                        <span class="label label-info">JavaScript</span>
+                    </center>
+                    <strong>Tools: </strong>
+                    <center>
+                        <span class="label label-warning">PyCharm</span>
+                        <span class="label label-warning">Android Studio</span>
+                        <span class="label label-warning">Git</span>
+                        <span class="label label-warning">Photoshop</span>
+                        <span class="label label-warning">MS Office</span>
+                        <span class="label label-warning">Codeblocks</span>
+                    </center>
+                    <strong>Framework & Libraries: </strong>
+                    <center>
+                        <span class="label label-danger">Django</span>
+                        <span class="label label-danger">Pandas (Python Library for Data Analysis)</span>
+                        <span class="label label-danger">Tkinter(Python's GUI Library)</span>
                     </center>
                     <hr>
                     <center>
                     <p class="text-left"><strong>Bio: </strong><br>
-                        Hi
+                        <ul>
+                        <li>All the Programming Languages are self-taught through online materials.</li>
+                        <li>Consistent Performer on Codechef, SPOJ, HackerRank & HackerEarth.</li>
+                        </ul>
                     </p>
-                    <br>
                     </center>
                 </div>
                 <div class="modal-footer">
@@ -91,27 +168,47 @@
     </div>
 
 <!-- Hobbies Modal -->
-    <div class="modal fade" id="hobbies" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="achievements" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title" id="myModalLabel2">Hobbies</h4>
+                    <h4 class="modal-title" id="myModalLabel2">Achievements</h4>
                     </div>
                 <div class="modal-body">
+                    <strong>Scholastic Achievement: </strong>
                     <center>
-                        <span class="label label-info">Listening to Music</span>
-                        <span class="label label-info">Cricket</span>
-                        <span class="label label-info">Cinema</span>
-                        <span class="label label-success">Graphic Designing</span>
-                        <span class="label label-success">Photography</span>
+                        <span class="label label-danger">Secured 99+ percentile in UPSEE</span>
+                        <span class="label label-danger">Runner Up in Mathematics Olympiad in 2012</span>
+                    </center>
+                    <strong>Technical Achievements: </strong>
+                    <center>
+                        <span class="label label-success">1 Silver & 1 Bronze Medal in HackerRank</span>
+                        <span class="label label-success">4 star coder on Codechef</span>
+                        <span class="label label-success">Conducted Coding Contests</span>
+                        <span class="label label-success">Gold Medal in Da Vinci's Gizmo(Chain Reaction Event)</span>
+                        <span class="label label-success">Conducted BIET-Design Week</span>
+                    </center>
+                    <strong>Non-Technical Achievements: </strong>
+                    <center>
+                        <span class="label label-info">Intern-Yogaseeds.in</span>
+                        <span class="label label-info">Super Team - ISP 5</span>
+                        <span class="label label-info">Gold Medal in Potential Prof</span>
                     </center>
                     <hr>
                     <center>
                     <p class="text-left"><strong>Bio: </strong><br>
-                        Hi
+                        <ul>
+                        <li>Conducted Coding Contests Under FMC(Fix My Class).FMC is an initiative started by students with an aim
+                        of improving the coding environment in our college.In FMC seniors teaches programming to juniors.</li>
+                        <li>BIET-Design Week is an initiative where we have taught Photoshop.</li>
+                        <li>Worked as Graphic Designing Intern at Yogaseeds(an start-up company).</li>
+                        <li>Super Team- ISP5: Member of the winning team of Internshala Student Partner(ISP) 5 programme.</li>
+                        <li>Potential Prof is a teaching event & I have taught Basic Python(At First Round) &
+                            Data Structures (In Final Round).</li>
+
+                        </ul>
                     </p>
-                    <br>
                     </center>
                 </div>
                 <div class="modal-footer">
@@ -124,26 +221,43 @@
     </div>
 
 <!--Achievement Modal -->
-    <div class="modal fade" id="achievements" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="hobbies" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                    <h4 class="modal-title" id="myModalLabel3">Achievements</h4>
+                    <h4 class="modal-title" id="myModalLabel3">Extra-Curricular Activities</h4>
                     </div>
                 <div class="modal-body">
+                    <strong>Position of Responsibilities: </strong>
                     <center>
-                        <span class="label label-warning">HTML5/CSS</span>
-                        <span class="label label-info">Adobe CS 5.5</span>
-                        <span class="label label-info">Microsoft Office</span>
-                        <span class="label label-success">Windows XP, Vista, 7</span>
+                        <span class="label label-danger">Graphic Designer at SCOIT</span>
+                        <span class="label label-danger">Mentor at FMC</span>
+                        <span class="label label-danger">Event Organiser at SCOIT</span>
+                        <span class="label label-danger">Promoted Internshala under ISP 5 Programme</span>
+                    </center>
+                    <strong>Technical Achievements: </strong>
+                    <center>
+                        <span class="label label-success">Cinema</span>
+                        <span class="label label-success">Listening to Music</span>
+                        <span class="label label-success">Designing</span>
+                        <span class="label label-success">Indulging in Discussion</span>
                     </center>
                     <hr>
                     <center>
                     <p class="text-left"><strong>Bio: </strong><br>
-                       Hi
+                        <ul>
+                        <li>
+                            SCOIT is branch council. Made posters of events & conducted coding contest for the first year.
+                        </li>
+                        <li>
+                           Mentoring Juniors for Coding & Career under FMC(Fix My Class).
+                        </li>
+                        <li>
+                           Always ready to indulge in discussions related to career & programming.
+                        </li>
+                    </ul>
                     </p>
-                    <br>
                     </center>
                 </div>
                 <div class="modal-footer">
@@ -155,63 +269,309 @@
         </div>
     </div>
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p> Hi </p>
-</div>
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">
   <h3 class="margin">Projects</h3><br>
   <div class="row">
     <div class="col-sm-3">
-        <p>Project 1</p>
-        <img src="images/home_events.jpg" class="img-responsive margin" style="width:100%" alt="Project_logo">
-        <button type="button" class="btn btn-default btn-md" onclick="location.href = 'http:\\google.com';">
+        <p>Bounce Game</p>
+        <img src="images/bounce1.png" class="img-responsive margin" alt="Project_logo">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/Bounce_Game';">
             <i class="fa fa-github" aria-hidden="true"></i> Source Code
         </button>
-        <button type="button" class="btn btn-default btn-md">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/Bounce_Game';">
             <i class="fa fa-code-fork" aria-hidden="true"></i> Fork
         </button>
+        <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#screenshot1">
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Screenshots
+        </button>
+        <br>
     </div>
+
     <div class="col-sm-3">
-        <p>Project 2</p>
-        <img src="images/home_events.jpg" class="img-responsive margin" style="width:100%" alt="Project_logo">
-        <button type="button" class="btn btn-default btn-md">
+        <p>Blog</p>
+        <img src="images/login.png" class="img-responsive margin" alt="Project_logo">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/djangoblog';">
             <i class="fa fa-github" aria-hidden="true"></i> Source Code
         </button>
-        <button type="button" class="btn btn-default btn-md">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/djangoblog';">
             <i class="fa fa-code-fork" aria-hidden="true"></i> Fork
         </button>
+        <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#screenshot2">
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Screenshots
+        </button>
     </div>
+
     <div class="col-sm-3">
-        <p>Project 3</p>
-        <img src="images/home_events.jpg" class="img-responsive margin" style="width:100%" alt="Project_logo">
-        <button type="button" class="btn btn-default btn-md">
+        <p>Just Code</p>
+        <img src="images/just_code_index.png" class="img-responsive margin" alt="Project_logo">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/justcodewebapp';">
             <i class="fa fa-github" aria-hidden="true"></i> Source Code
         </button>
-        <button type="button" class="btn btn-default btn-md">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/justcodewebapp';">
             <i class="fa fa-code-fork" aria-hidden="true"></i> Fork
         </button>
+        <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#screenshot3">
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Screenshots
+        </button>
     </div>
+
       <div class="col-sm-3">
-        <p>Project 3</p>
-        <img src="images/home_events.jpg" class="img-responsive margin" style="width:100%" alt="Project_logo">
-        <button type="button" class="btn btn-default btn-md">
+        <p>Resume Web Page</p>
+        <img src="images/resume1.png" class="img-responsive margin" width="350" height="150" alt="Project_logo">
+        <button type="button" class="btn btn-default btn-md"
+                onclick="location.href = 'https://github.com/vishuvish/resumewebsite';">
             <i class="fa fa-github" aria-hidden="true"></i> Source Code
         </button>
-          <button type="button" class="btn btn-default btn-md">
+          <button type="button" class="btn btn-default btn-md"
+                  onclick="location.href = 'https://github.com/vishuvish/resumewebsite';">
             <i class="fa fa-code-fork" aria-hidden="true"></i> Fork
+        </button>
+          <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#screenshot4">
+            <i class="fa fa-picture-o" aria-hidden="true"></i> Screenshots
         </button>
     </div>
   </div>
 </div>
 
+<!-- Project 1 Screenshot Modal -->
+    <div class="modal fade" id="screenshot1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel4">Bounce Game</h4>
+                    </div>
+                <div class="modal-body">
+                     <blockquote>
+                        <img src="images/bounce1.png" class="img-thumbnail" alt="Starting Screen">
+                        <footer>This is how bounce game will start.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/bounce2.png" class="img-thumbnail" alt="Game Over">
+                        <footer>Game Over Screen - When ball misses the paddle & hit the bottom edge.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/bounce_code.png" class="img-thumbnail" alt="code" width="500" height="300">
+                        <footer>Source Code of Bounce Game</footer>
+                    </blockquote>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        This is the first thing I have developed. I was learning Python from various online source and
+                        from <a href="http://www.udemy.com" style="color:blue;">Udemy</a>
+                        I learnt about Tkinter module. After going through
+                        documentation I have finally develop this Bounce Game.
+                    </p>
+                    <p>
+                        Source Code is available on Github.
+                    </p>
+                        <small>- Thank You :)</small>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Take Me Back</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Project 2 Screenshot Modal -->
+    <div class="modal fade" id="screenshot2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel5">Blog</h4>
+                    </div>
+                <div class="modal-body">
+                     <blockquote>
+                        <img src="images/login.png" class="img-thumbnail" alt="Login">
+                        <footer>Very Basic Login Page</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/home_without_login.png" class="img-thumbnail" alt="home_without_login" >
+                        <footer>Home Page without Login. In Navigation bar Login & Register links are available right now.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/post_without_login.png" class="img-thumbnail" alt="post_without_login" >
+                        <footer>Edit Link is missing from navigation bar, You cannot comment if you're not login</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/post.png" class="img-thumbnail" alt="post_after_login">
+                        <footer>Now edit Link appears navigation bar & now you can comment as well.</footer>
+                    </blockquote>
+					<blockquote>
+                        <img src="images/comment_area.png" class="img-thumbnail" alt="comments">
+                        <footer>After login you are authorised to comment earlier which was not possible.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/edit_post.png" class="img-thumbnail" alt="edit_post">
+                        <footer>Fully functional editor. You can preview the post on the left side of the page.</footer>
+                    </blockquote>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        This is my project which I have developed using django.
+                        I have learned Django from <a href="http://www.thenewboston.com" style="color:blue;">The New Boston's</a>
+                        tutorials.
+                        This blog is made by referencing <a href="https://www.codingforentrepreneurs.com" style="color:blue;">
+                            CFE</a>
+                        & <a href="https://docs.djangoproject.com" style="color:blue;">Django's </a>Official Documentation.
+                    </p>
+                    <p>
+                        Source Code is available on Github.
+                    </p>
+                        <small>- Thank You :)</small>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Take me Back</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Project 3 Screenshot Modal -->
+    <div class="modal fade" id="screenshot3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel6">Just Code<small> - It is still in development phase.</small></h4>
+                    </div>
+                <div class="modal-body">
+                     <blockquote>
+                        <img src="images/just_code_index.png" class="img-thumbnail" alt="Index Page">
+                        <footer>This will be the Home Page of this Just Code website.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/just_code_qa.png" class="img-thumbnail" alt="Q & A">
+                        <footer>This is the Q & A section & Contact Us Form.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/just_code_project_list.png" class="img-thumbnail" alt="Project List">
+                        <footer>This page shows all the projects details which will be initiated under Just Code club.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/just_code_add_project.png" class="img-thumbnail" alt="Add Project">
+                        <footer>Through this form user can add their project in the Just Code library.</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/just_code_user_profile.png" class="img-thumbnail" alt="Profile">
+                        <footer>This is the profile page of the users registered with us.</footer>
+                    </blockquote>
+                     <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        This project is in its Initial Development Phase.So screenshots might go through some changes in the future.
+                        I'm using Django(Python web Framework).
+                        All the references are taken from
+                        <a href="https://docs.djangoproject.com" style="color:blue;">Django's </a>Official Documentation
+                        & <a href="https://getbootstrap.com" style="color:blue;">Bootstrap's </a>Official Documentation.
+                    </p>
+                    <p>
+                        Source Code is available on Github.
+                    </p>
+                        <small>- Thank You :)</small>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Take me Back</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Project 4 Screenshot Modal -->
+    <div class="modal fade" id="screenshot4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel7">Resume Web Page</h4>
+                    </div>
+                <div class="modal-body">
+                    <blockquote>
+                        <img src="images/resume1.png" class="img-thumbnail" alt="Resume 1">
+                        <footer>Jumbotron of this web page</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/resume_skills.png" class="img-thumbnail" alt="Skills">
+                        <footer>Skills Modal</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/resume_achievements.png" class="img-thumbnail" alt="Achievements">
+                        <footer>Achievements Modal</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/resume_hobbies.png" class="img-thumbnail" alt="Hobbies">
+                        <footer>Extra Curricular Activities Modal</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/resume_projects.png" class="img-thumbnail" alt="Sceenshot">
+                        <footer>Project Row</footer>
+                    </blockquote>
+                    <blockquote>
+                        <img src="images/resume_screenshot.png" class="img-thumbnail" alt="Sceenshot">
+                        <footer>Screenshot of Projects Modal</footer>
+                    </blockquote>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        This is my resume web page. It contains all the links of my profile on various websites like
+                        <a href="https://www.github.com" style="color:blue;"> Github, </a>
+                        <a href="https://www.codechef.com" style="color:blue;"> Code Chef, </a>
+                        <a href="https://www.spoj.com" style="color:blue;"> SPOJ, </a>
+                        etc.
+                        All the references are taken from
+                        <a href="https://getbootstrap.com" style="color:blue;">Bootstrap's </a>Official Documentation.
+                    </p>
+                    <p>
+                        Source Code is available on Github.
+                    </p>
+                        <small>- Thank You :)</small>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Take me Back</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Posted by: Vishal Agrawal</p>
-    <p>Contact information: vishuvish14@gmail.com</p>
+    <p>
+        <i class="fa fa-phone" aria-hidden="true"> </i> 70683806059, 8299861603   |
+        <i class="fa fa-envelope" aria-hidden="true"></i> vishvishu14@gmail.com
+    </p>
+    <a href="http://bit.ly/2tGTNjk" target="_blank">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+    </a>
+    <a href="http://bit.ly/2tSdzJ7"  target="_blank">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+    </a>
 </footer>
 </body>
 </html>

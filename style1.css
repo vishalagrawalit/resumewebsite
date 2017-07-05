@@ -55,10 +55,14 @@ a:visited {
 }
 
 .navbar-center{
-    padding-left: 38%;
+    padding-left: 35%;
 }
 
-#myModalLabel1, #myModalLabel2, #myModalLabel3 {
+.education{
+    padding-left: 41%;
+}
+
+#myModalLabel0, #myModalLabel1, #myModalLabel2, #myModalLabel3,  #myModalLabel4, #myModalLabel5, #myModalLabel6, #myModalLabel7{
    color: black;
 }
 
@@ -68,4 +72,9 @@ a:visited {
 
 .list-group-horizontal .list-group-item {
     display: inline-block;
+}
+
+.img-thumbnail {
+   width="500" ;
+   height="300";
 }

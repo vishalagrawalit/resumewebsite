@@ -55,12 +55,9 @@ a:visited {
 }
 
 .navbar-center{
-    padding-left: 35%;
+    padding-left: 25%;
 }
 
-.education{
-    padding-left: 41%;
-}
 
 #myModalLabel0, #myModalLabel1, #myModalLabel2, #myModalLabel3,  #myModalLabel4, #myModalLabel5, #myModalLabel6, #myModalLabel7{
    color: black;
